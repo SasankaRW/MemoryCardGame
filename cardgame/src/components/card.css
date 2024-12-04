@@ -2,26 +2,30 @@
     width: 100px;
     height: 100px;
     perspective: 1000px;
-}
-
-.card .card-front,
-.card .card-back{
+    cursor: pointer;
+  }
+  
+  .card .card-front,
+  .card .card-back {
     width: 100%;
     height: 100%;
     backface-visibility: hidden;
     position: absolute;
     display: flex;
     align-items: center;
-
-
-}
-
-.card.fliped .card-back{
-    transform: rotateY('180deg');
-}
-
-.card .card-front{
-    background-color: brown;
-    transform: rotateY('180deg');
-}
-
+    justify-content: center;
+  }
+  
+  .card.flipped .card-back {
+    transform: rotateY(180deg);
+  }
+  
+  .card .card-front {
+    background-color: lightblue;
+    transform: rotateY(180deg);
+  }
+  
+  .card-back {
+    background-color: gray;
+  }
+  
